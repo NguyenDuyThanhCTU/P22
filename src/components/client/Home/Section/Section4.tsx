@@ -63,8 +63,8 @@ export const Section4 = () => {
     },
   ];
   return (
-    <div className="bg-[rgb(63,63,255)]">
-      <div className="w-[1100px] mx-auto pb-5 text-center text-white py-10 flex flex-col items-center gap-5">
+    <div className="bg-[rgb(0,25,158)] py-10">
+      <div className="w-[1100px] mx-auto  text-center text-white py-10 flex flex-col items-center gap-5">
         <h2 className="text-[30px] font-normal">
           Dịch vụ taxi đường dài giá rẻ <br /> tại Vĩnh Long
         </h2>
@@ -73,15 +73,19 @@ export const Section4 = () => {
           tỉnh, taxi đường dài. Ưu tiên các dòng xe đời mới, đầy đủ tiện nghi
           cho các hợp đồng đường dài, hợp đồng đi tỉnh, hợp đồng trọn gói
         </p>
+        <div className="h-[1px] bg-white w-1/2 my-5"></div>
         <div className="flex gap-7">
           {CardItem.map((item: any, index: any) => (
             <Card key={index} {...item} />
           ))}
         </div>
-        <div>
-          <button className="bg-white text-black py-2 px-5 rounded-lg">
-            Xem thêm
-          </button>
+        <div className="mt-5">
+          <div
+            className="bg-white text-black py-2 px-5 rounded-lg cursor-pointer"
+            onClick={() => window.open("tel:0585649649", "_self")}
+          >
+            Gọi 0585 649 649
+          </div>
         </div>
       </div>
     </div>
