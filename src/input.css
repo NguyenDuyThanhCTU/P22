@@ -74,6 +74,29 @@
 }
 
 
+
+@keyframes flashing {
+  0% {
+      background-color: rgb(3,237,166);
+  }
+  50% {
+    background-color: rgb(231, 67, 67);
+  }
+  100% {
+    background-color: rgb(3,237,166);
+  }
+}
+
+.flashing {
+  animation: flashing 1s infinite; 
+  text-align: center;
+
+}
+
+
+
+
+
 .admin-label {
 font-size: 17px;
 font-weight: 300;

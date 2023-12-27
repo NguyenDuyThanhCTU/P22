@@ -26,8 +26,8 @@ const Footer = () => {
   ];
   return (
     <div className="bg-[rgb(5,31,77)] text-white">
-      <div className="w-[1100px] mx-auto pb-5">
-        <div className="py-8 grid grid-cols-2 ">
+      <div className="d:w-[1100px] p:w-auto p:mx-2 d:mx-auto pb-5">
+        <div className="py-8 grid p:grid-cols-1 gap-10  d:grid-cols-2 ">
           <div>
             <h2 className="font-semibold text-[22px]">
               TAXI Mai Linh Vĩnh Long <br /> Xe Đẹp, Giá Rẻ, Đón Nhanh
